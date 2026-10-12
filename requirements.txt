@@ -1,0 +1,9 @@
+# Gauntlet dependencies. The mutation engine and the custom SAST rules are pure
+# standard library (ast); these are the app under test, the BDD runner, and the
+# SAST tool.
+flask==3.1.0
+behave==1.2.6
+bandit==1.9.4        # >=1.9 is required on Python 3.13/3.14 (older bandit crashes
+                     # on string constants because it reads the removed node.s)
+pytest==9.1.1
+coverage==7.16.2

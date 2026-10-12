@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.behave*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# Keep: reports/*.json (real run output), docs/*.pdf, all source, the app under
+# test, the four gate layers, the defect catalog and the harness.

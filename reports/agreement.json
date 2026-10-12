@@ -1,0 +1,104 @@
+[
+  {
+    "id": "L1",
+    "expected": [
+      "bdd"
+    ],
+    "measured": [
+      "bdd"
+    ],
+    "match": true
+  },
+  {
+    "id": "L2",
+    "expected": [
+      "dast",
+      "unit"
+    ],
+    "measured": [
+      "dast",
+      "unit"
+    ],
+    "match": true
+  },
+  {
+    "id": "T1",
+    "expected": [
+      "mutation"
+    ],
+    "measured": [
+      "mutation"
+    ],
+    "match": true
+  },
+  {
+    "id": "S1",
+    "expected": [
+      "dast",
+      "sast"
+    ],
+    "measured": [
+      "dast",
+      "sast"
+    ],
+    "match": true
+  },
+  {
+    "id": "S2",
+    "expected": [
+      "dast",
+      "sast"
+    ],
+    "measured": [
+      "dast",
+      "sast"
+    ],
+    "match": true
+  },
+  {
+    "id": "S3",
+    "expected": [
+      "sast"
+    ],
+    "measured": [
+      "sast"
+    ],
+    "match": true
+  },
+  {
+    "id": "S4",
+    "expected": [
+      "sast"
+    ],
+    "measured": [
+      "sast"
+    ],
+    "match": true
+  },
+  {
+    "id": "S5",
+    "expected": [
+      "dast"
+    ],
+    "measured": [
+      "dast"
+    ],
+    "match": true
+  },
+  {
+    "id": "S6",
+    "expected": [
+      "dast"
+    ],
+    "measured": [
+      "dast"
+    ],
+    "match": true
+  },
+  {
+    "id": "G1",
+    "expected": [],
+    "measured": [],
+    "match": true
+  }
+]

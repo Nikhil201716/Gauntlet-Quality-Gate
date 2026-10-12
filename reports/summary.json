@@ -1,0 +1,44 @@
+{
+  "n_defects": 10,
+  "clean_passes_all_layers": true,
+  "clean_mutation_score": 1.0,
+  "per_layer_catches": {
+    "unit": 1,
+    "bdd": 1,
+    "mutation": 1,
+    "sast": 4,
+    "dast": 5
+  },
+  "baseline_green_suite": {
+    "layers": [
+      "unit",
+      "bdd"
+    ],
+    "caught": [
+      "L1",
+      "L2"
+    ],
+    "n_caught": 2,
+    "n_missed": 8
+  },
+  "full_gate": {
+    "caught": [
+      "L1",
+      "L2",
+      "T1",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "n_caught": 9
+  },
+  "escaped_all_layers": [
+    "G1"
+  ],
+  "false_positives_on_benign": [],
+  "prediction_agreement": 10,
+  "prediction_total": 10
+}

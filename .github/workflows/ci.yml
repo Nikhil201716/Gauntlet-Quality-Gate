@@ -1,0 +1,32 @@
+name: ci
+
+# Gauntlet IS a CI/CD quality gate, so CI runs that gate on every push: the unit
+# suite, the BDD acceptance suite, the mutation score, the SAST scan and the DAST
+# probes. Any one of them failing blocks the build. It then runs the
+# fault-injection measurement that shows why all five are needed.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Quality gate (unit + BDD + mutation + SAST + DAST)
+        run: python -m gate.quality_gate
+
+      - name: Fault-injection measurement (which layer catches which defect)
+        run: python -m harness.score
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/*.json
